@@ -1,0 +1,138 @@
+.top {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+}
+
+.top h1 {
+    font-size: 25px;
+    color: white;
+    margin-left: 20px;
+}
+
+.top nav {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.top nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.top nav ul li {
+    margin-left: 20px;
+    padding: 2px 5px 2px 5px;
+    border-radius: 20px;
+    transition: all ease-in-out 0.5s;
+}
+
+.top nav ul li:hover {
+    background-color: rgb(24, 158, 199);
+}
+
+.top nav ul li a {
+    text-decoration: none;
+    color: rgb(212, 206, 206);
+    font-weight: 800;
+}
+
+.top nav ul li a:hover {
+    color: white;
+}
+
+#closeBtn {
+    display: none;
+}
+
+#openBtn {
+    display: none;
+}
+
+#mobileNav {
+    display: none;
+}
+.contents .about .abt {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.contents .about .abt p {
+    font-size: 20px;
+}
+
+.contents div p {
+    font-weight: 800;
+}
+
+.contents div p a {
+    text-decoration: none;
+    color: blue;
+    font-weight: 700;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 30px 0 10px 5px;
+    bottom: 0;
+}
+
+ @media screen and (max-width: 500px){
+    .contents .about .abt {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contents .about .abt .maltese2 {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .top #openBtn {
+        display: flex;
+        color: rgb(253, 252, 252);
+        position: absolute;
+        font-size: 50px;
+        background-color: rgba(0, 0, 0, 1);
+        right: 0;
+    }
+
+    .top #openBtn i {
+        font-size: 40px;
+    }
+    
+    .top #closeBtn {
+        display: flex;
+        color: rgb(253, 252, 252);
+        position: absolute;
+        font-size: 40px;
+        background-color: rgba(0, 0, 0, 1);
+        right: 0;
+    }
+
+    .top #mobileNav {
+        display: none;
+        position: absolute;
+        right: 0;
+        margin-top: 45px;
+        background-color: black;
+        margin-right: 0;
+    }
+
+    .top #mobileNav ul {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        margin-right: 10px;
+    }
+
+    .top #mobileNav ul li {
+        margin-top: 20px;
+    }
+} 
